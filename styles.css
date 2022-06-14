@@ -1,0 +1,38 @@
+/* TODO:
+    1. At the different breakpoints, set up different amounts of columns
+*/
+.container {
+    display: grid;
+    grid-template-rows: 100px 100px 200px 100px;
+    grid-template-columns: auto;
+    grid-template-areas: 
+        'hd'
+        'sd'
+        'mc'
+        'ft ';
+}
+
+.navbar {
+    grid-area: 'hd'
+}
+
+.side-bar {
+    grid-area: 'sd'
+}
+
+.main-content {
+    grid-area: 'mc'
+}
+
+.footer {
+    grid-area: 'ft'
+}
+
+/* larger phones, smaller tablets */
+@media (min-width: 600px){
+    .container {
+
+    }
+}
+
+/* TODO: fill out the other breakpoints, using the guide */
